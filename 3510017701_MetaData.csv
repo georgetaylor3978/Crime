@@ -1,0 +1,566 @@
+﻿"Cube Title","Product Id","CANSIM Id",URL,"Cube Notes","Archive Status",Frequency,"Start Reference Period","End Reference Period","Total number of dimensions"
+"Incident-based crime statistics, by detailed violations, Canada, provinces, territories, Census Metropolitan Areas and Canadian Forces Military Police","35100177","252-0051","https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3510017701",1;2;3;54;97;101;108;110,"CURRENT - a cube available to the public and that is current","Annual","1998-01-01","2024-01-01","3",
+
+"Dimension ID","Dimension name","Dimension Notes","Dimension Definitions"
+"1","Geography",3;47;110,""
+"2","Violations",109,""
+"3","Statistics",,""
+
+"Dimension ID","Member Name","Classification Code","Member ID","Parent Member ID",Terminated,"Member Notes","Member Definitions"
+"1","Canada","[11124]","1","","",50,
+"1","Newfoundland and Labrador [10]","[10]","2","1","",,
+"1","St. John's, Newfoundland and Labrador [10001]","[10001]","3","2","",4,
+"1","Prince Edward Island [11]","[11]","4","1","",51,
+"1","Nova Scotia [12]","[12]","5","1","",,
+"1","Halifax, Nova Scotia [12205]","[12205]","6","5","",112;133,
+"1","New Brunswick [13]","[13]","7","1","",,
+"1","Moncton, New Brunswick [13305]","[13305]","43","7","",8;58,
+"1","Saint John, New Brunswick [13310]","[13310]","8","7","",4;47;58;89;134,
+"1","Fredericton, New Brunswick [13320]","[13320]","52","7","",8,
+"1","Quebec [24]","[24]","9","1","",50;62;80;116,
+"1","Saguenay, Quebec [24408]","[24408]","10","9","",5;55,
+"1","Québec, Quebec [24421]","[24421]","11","9","",,
+"1","Sherbrooke, Quebec [24433]","[24433]","12","9","",32;37,
+"1","Trois-Rivières, Quebec [24442]","[24442]","13","9","",,
+"1","Drummondville, Quebec [24447]","[24447]","53","9","",8,
+"1","Montréal, Quebec [24462]","[24462]","14","9","",38;50;53;80;95;98;106;145,
+"1","Ottawa-Gatineau, Quebec part [24505]","[24505]","15","9","",6;61,
+"1","Ontario [35]","[35]","16","1","",7;67;116,
+"1","Ottawa-Gatineau, Ontario/Quebec [24505/35505]","[505]","17","16","",6;52;61;68,
+"1","Ottawa-Gatineau, Ontario part [35505]","[35505]","18","16","",6;52;68,
+"1","Kingston, Ontario [35521]","[35521]","27","16","",8;141,
+"1","Belleville-Quinte West, Ontario [35522]","[35522]","49","16","",8;136,
+"1","Peterborough, Ontario [35529]","[35529]","44","16","",8,
+"1","Toronto, Ontario [35535]","[35535]","19","16","",33,
+"1","Hamilton, Ontario [35537]","[35537]","20","16","",33,
+"1","St. Catharines-Niagara, Ontario [35539]","[35539]","21","16","",94,
+"1","Kitchener-Cambridge-Waterloo, Ontario [35541]","[35541]","22","16","",,
+"1","Brantford, Ontario [35543]","[35543]","45","16","",8;143,
+"1","Guelph, Ontario [35550]","[35550]","46","16","",8,
+"1","London, Ontario [35555]","[35555]","23","16","",104,
+"1","Windsor, Ontario [35559]","[35559]","24","16","",,
+"1","Barrie, Ontario [35568]","[35568]","47","16","",8,
+"1","Greater Sudbury, Ontario [35580]","[35580]","25","16","",60,
+"1","Thunder Bay, Ontario [35595]","[35595]","26","16","",,
+"1","Manitoba [46]","[46]","28","1","",116,
+"1","Winnipeg, Manitoba [46602]","[46602]","29","28","",9;10;47;93,
+"1","Saskatchewan [47]","[47]","30","1","",11;116;142,
+"1","Regina, Saskatchewan [47705]","[47705]","31","30","",,
+"1","Saskatoon, Saskatchewan [47725]","[47725]","32","30","",,
+"1","Alberta [48]","[48]","33","1","",116;130;131;132,
+"1","Lethbridge, Alberta [48810]","[48810]","50","33","",8,
+"1","Calgary, Alberta [48825]","[48825]","34","33","",130,
+"1","Red Deer, Alberta [48830]","[48830]","54","33","",8,
+"1","Edmonton, Alberta [48835]","[48835]","35","33","",131,
+"1","British Columbia [59]","[59]","36","1","",28;49;79;99;116;127;128,
+"1","Kelowna, British Columbia [59915]","[59915]","48","36","",8;28;100,
+"1","Kamloops, British Columbia [59925]","[59925]","55","36","",8,
+"1","Chilliwack, British Columbia [59930]","[59930]","56","36","",8,
+"1","Abbotsford-Mission, British Columbia [59932]","[59932]","39","36","",8;28,
+"1","Vancouver, British Columbia [59933]","[59933]","37","36","",12;13;14;28;59;79;105,
+"1","Victoria, British Columbia [59935]","[59935]","38","36","",28;76;146,
+"1","Nanaimo, British Columbia [59938]","[59938]","57","36","",8,
+"1","Yukon [60]","[60]","40","1","",,
+"1","Northwest Territories [61]","[61]","41","1","",15,
+"1","Nunavut [62]","[62]","42","1","",15,
+"1","Canadian Forces Military Police [99001]","","51","1","",107;108,
+"2","Total, all violations","[0]","1","","",,
+"2","Total, all Criminal Code violations (including traffic)","[25]","2","1","",,
+"2","Total, all Criminal Code violations (excluding traffic)","[50]","3","2","",,
+"2","Total violent Criminal Code violations","[100]","4","3","",16,
+"2","Homicide","[110]","5","4","",17;24,
+"2","Murder, first degree","[1110]","6","5","",17;24,
+"2","Murder, second degree","[1120]","7","5","",17;24,
+"2","Manslaughter","[1130]","8","5","",17;24,
+"2","Infanticide","[1140]","9","5","",17;24,
+"2","Total other violations causing death","[120]","10","4","",,
+"2","Criminal negligence causing death","[1150]","11","10","",,
+"2","Other related violations causing death","[1160]","12","10","",,
+"2","Attempted murder","[1210]","13","4","",,
+"2","Sexual offence which occurred prior to January 4, 1983","[1300]","317","4","",96,
+"2","Sexual assault, level 3, aggravated","[1310]","14","4","",,
+"2","Sexual assault, level 2, weapon or bodily harm","[1320]","15","4","",,
+"2","Sexual assault, level 1","[1330]","16","4","",,
+"2","Total sexual violations against children","[130]","17","4","",26;70;73,
+"2","Sexual interference","[1345]","18","17","",26;70,
+"2","Invitation to sexual touching","[1350]","19","17","",26;70,
+"2","Sexual exploitation","[1355]","20","17","",26;70,
+"2","Making sexually explicit material available to children","[1367]","232","17","",48;70,
+"2","Parent or guardian procuring sexual activity: person procured under the age of 16 years","[3165]","244","17","t",,
+"2","Parent or guardian procuring sexual activity","[1368]","245","17","",64;70,
+"2","Householder permitting illegal sexual activity: person under the age of 16 years","[3167]","246","17","t",,
+"2","Householder permitting prohibited sexual activity","[1369]","247","17","",64;70,
+"2","Luring a child via a computer","[1370]","21","17","",26;70;147,
+"2","Agreement or Arrangement - sexual offence against child","[1371]","264","17","",84,
+"2","Bestiality in presence of, or incites, a child","[1381]","265","17","",83,
+"2","Assault, level 3, aggravated","[1410]","22","4","",,
+"2","Assault, level 2, weapon or bodily harm","[1420]","23","4","",,
+"2","Assault, level 1","[1430]","24","4","",,
+"2","Total assaults against a peace officer","[135]","226","4","",25;35,
+"2","Total other assaults","[140]","26","4","",,
+"2","Unlawfully causing bodily harm","[1440]","27","26","",,
+"2","Criminal negligence causing bodily harm","[1470]","28","26","",,
+"2","Other assaults","[1480]","29","26","",,
+"2","Total firearms, use of, discharge, pointing","[150]","30","4","",,
+"2","Discharge firearm with intent","[1450]","31","30","",,
+"2","Using firearm in commission of offence","[1455]","32","30","",,
+"2","Pointing a firearm","[1457]","33","30","",,
+"2","Total robbery","[160]","34","4","",18,
+"2","Robbery","[1610]","35","34","",18,
+"2","Robbery to steal a firearm","[1611]","36","34","",18,
+"2","Total forcible confinement or kidnapping","[510]","227","4","",34,
+"2","Forcible confinement or kidnapping","[1510]","37","227","",34,
+"2","Kidnapping","[1515]","219","227","",34,
+"2","Forcible confinement","[1516]","220","227","",34,
+"2","Total abduction","[170]","38","4","",,
+"2","Abduction under the age 14, not parent or guardian","[1530]","39","38","",,
+"2","Abduction under the age 16","[1540]","40","38","",,
+"2","Removal of children from Canada","[1545]","41","38","",,
+"2","Abduction under the age 14 contravening a custody order","[1550]","42","38","",,
+"2","Abduction under age 14, by parent or guardian","[1560]","43","38","",,
+"2","Extortion","[1620]","44","4","",,
+"2","Criminal harassment","[1625]","45","4","",36,
+"2","Uttering threats","[1627]","46","4","",,
+"2","Indecent/Harassing communications","[1626]","47","4","",75,
+"2","Total offences in relation to sexual services","[190]","256","4","",64,
+"2","Obtaining sexual services for consideration","[1711]","237","256","",64,
+"2","Obtaining sexual services for consideration from person under the age of 18 years","[1712]","238","256","",64,
+"2","Receive material benefit from sexual services","[1721]","239","256","",64,
+"2","Receive material benefit from sexual services provided by person under the age of 18 years","[1722]","240","256","",64,
+"2","Procuring","[1731]","241","256","",64,
+"2","Procuring a person under the age of 18 years","[1732]","242","256","",64,
+"2","Advertising sexual services","[1740]","243","256","",64,
+"2","Total other violent violations","[180]","48","4","",117,
+"2","Conspire to commit murder","[1220]","49","48","",,
+"2","Other sexual violations","[1340]","50","48","",,
+"2","Sexual Exploitation of a person with a disability","[1356]","221","48","",,
+"2","Incest","[1360]","51","48","",,
+"2","Corrupting morals of a child","[1365]","52","48","",,
+"2","Anal intercourse","[1375]","53","48","",,
+"2","Bestiality, commit or compel person","[1380]","54","48","",,
+"2","Voyeurism","[1385]","55","48","",,
+"2","Non-consensual distribution of intimate images","[1390]","257","48","",75,
+"2","Trap likely to or causing bodily harm","[1475]","56","48","",,
+"2","Hostage-taking","[1520]","57","48","",,
+"2","Trafficking in persons","[1525]","58","48","",111,
+"2","Intimidation of a justice system participant or a journalist","[1621]","59","48","",,
+"2","Intimidation of a non-justice participant","[1622]","60","48","",,
+"2","Explosives causing death or bodily harm","[1628]","61","48","",,
+"2","Arson, disregard for human life","[1629]","62","48","",,
+"2","Failure to comply with mandatory safeguards in relation to medical assistance in dying","[1631]","261","48","",78,
+"2","Forging or destroying documents related to assistance requests with criminal intent","[1632]","262","48","",78,
+"2","Other violent violations","[1630]","63","48","",,
+"2","Total property crime violations","[200]","64","3","",,
+"2","Total breaking and entering","[210]","65","64","",,
+"2","Breaking and entering","[2120]","66","65","",,
+"2","Breaking and entering to steal a firearm","[2121]","67","65","",,
+"2","Break and enter to steal a firearm from a motor vehicle","[2125]","222","65","",,
+"2","Total possession of stolen property","[211]","68","64","",42;46,
+"2","Total trafficking in stolen property","[212]","228","64","",42;43;46,
+"2","Total theft of motor vehicle","[220]","69","64","",46;140,
+"2","Total theft over $5,000 (non-motor vehicle)","[230]","72","64","",,
+"2","Theft over $5,000","[2130]","73","72","",,
+"2","Theft over $5,000 from a motor vehicle","[2132]","74","72","",,
+"2","Shoplifting over $5,000","[2133]","75","72","",126,
+"2","Total theft under $5,000 (non-motor vehicle)","[240]","76","64","",,
+"2","Theft $5,000 or under","[2140]","77","76","",,
+"2","Theft $5,000 or under from a motor vehicle","[2142]","78","76","",,
+"2","Shoplifting $5,000 or under","[2143]","79","76","",126,
+"2","Fraud","[2160]","80","64","",30;145,
+"2","Identity theft","[2165]","223","64","",30;56,
+"2","Identity fraud","[2166]","224","64","",30;145,
+"2","Total mischief","[250]","81","64","",63,
+"2","Mischief","[2170]","82","81","",,
+"2","Mischief in relation to cultural property","[2175]","233","81","",63,
+"2","Hate-motivated mischief relating to property used by identifiable group","[2176]","83","81","",88,
+"2","Mischief relating to war memorials","[2177]","234","81","",63,
+"2","Arson","[2110]","84","64","",,
+"2","Altering, removing or destroying Vehicle Identification Number (VIN)","[2178]","229","64","",45,
+"2","Total other Criminal Code violations","[300]","225","3","",,
+"2","Counterfeiting","[3420]","85","225","",19,
+"2","Total weapons violations","[310]","86","225","",,
+"2","Offensive weapons, explosives","[3310]","87","86","",20,
+"2","Offensive weapons, prohibited","[3320]","88","86","",20,
+"2","Offensive weapons, restricted","[3330]","89","86","",20,
+"2","Firearm transfers or serial numbers","[3340]","90","86","",20,
+"2","Other offensive weapons","[3350]","91","86","",20,
+"2","Weapons trafficking and Manufacturing","[3365]","92","86","",,
+"2","Weapons possession contrary to order","[3370]","93","86","",,
+"2","Possession of weapons","[3375]","94","86","",,
+"2","Unauthorized importing or exporting of weapons","[3380]","95","86","",,
+"2","Firearms documentation or administration","[3390]","96","86","",,
+"2","Unsafe storage of firearms","[3395]","97","86","",,
+"2","Possession of, or accessing child pornography","[3455]","98","225","",27;50;52;57;69;70;76;79;125;128;133,
+"2","Making, or distribution of child pornography","[3456]","258","225","",57;69;70;76;79;125;127;128;131,
+"2","Total prostitution","[320]","99","225","",64,
+"2","Bawdy house","[3110]","100","99","",64;72,
+"2","Living off the avails of prostitution of a person under age 18","[3115]","101","99","",64,
+"2","Procuring","[3120]","102","99","",64,
+"2","Obtains or communicates with a person under age 18 for purpose of sex","[3125]","103","99","",64,
+"2","Other prostitution","[3130]","104","99","",64,
+"2","Public communication to sell sexual services","[3140]","235","99","",64,
+"2","Offences related to impeding traffic to buy or sell sexual services","[3141]","236","99","",64,
+"2","Disturb the peace","[3430]","105","225","",21,
+"2","Total administration of justice violations","[330]","106","225","",,
+"2","Fail to comply with order","[3410]","107","106","",70,
+"2","Escape or helps to escape from lawful custody","[3440]","108","106","",,
+"2","Prisoner unlawfully at large","[3480]","109","106","",,
+"2","Fail to appear","[3510]","110","106","",,
+"2","Breach of probation","[3520]","111","106","",70,
+"2","Other violations against the administration of law and justice (Part IV Criminal Code)","[3730]","112","106","",71,
+"2","Total violations related to animal cruelty","[335]","319","225","",118;135,
+"2","Total other violations","[340]","113","225","",119,
+"2","Betting house","[3210]","114","113","",,
+"2","Gaming house","[3220]","115","113","",,
+"2","Other violations related to gaming and betting","[3230]","116","113","",,
+"2","Common Bawdy House","[3240]","259","113","",72,
+"2","Indecent acts","[3450]","117","113","",,
+"2","Corrupting morals","[3460]","118","113","",,
+"2","Obstruct public or peace officer","[3470]","119","113","",,
+"2","Trespass at night","[3490]","120","113","",,
+"2","Utter threats to property or animal","[3540]","121","113","",,
+"2","Advocating genocide","[3550]","122","113","",,
+"2","Public incitement of hatred","[3560]","123","113","",,
+"2","Offences against public order (Part II Criminal Code)","[3710]","125","113","",,
+"2","Property or service for terrorist activity","[3711]","126","113","",74;90,
+"2","Freezing of property, disclosure or audit","[3712]","127","113","",74;90,
+"2","Participate in activity of terrorist group","[3713]","128","113","",74;90,
+"2","Facilitate terrorist activity","[3714]","129","113","",74;90,
+"2","Commission or instructing to carry out terrorist activity","[3715]","130","113","",74;90,
+"2","Harbour or conceal terrorist","[3716]","131","113","",74;90,
+"2","Hoax terrorism","[3717]","132","113","",53;74;90,
+"2","Advocating/Promoting terrorism offence","[3718]","260","113","",74;90,
+"2","Firearms and other offensive weapons (Part III Criminal Code)","[3720]","133","113","",,
+"2","Leaving Canada to participate in activity of terrorist group","[3721]","248","113","",65;74;90,
+"2","Leaving Canada to facilitate terrorist activity","[3722]","249","113","",65;74;90,
+"2","Leaving Canada to commit offence for terrorist group","[3723]","250","113","",65;74;90,
+"2","Leaving Canada to commit offence that is terrorist activity","[3724]","251","113","",65;74;90,
+"2","Concealing person who carried out terrorist activity that is a terrorism offence for which that person is liable to imprisonment for life","[3725]","252","113","",65;74;90,
+"2","Concealing person who carried out terrorist activity that is a terrorism offence for which that person is liable to any punishment other than life","[3726]","253","113","",65;74;90,
+"2","Concealing person who is likely to carry out terrorist activity","[3727]","254","113","",65;74;90,
+"2","Sexual offences, public morals and disorderly conduct (Part V Criminal Code)","[3740]","134","113","",,
+"2","Invasion of privacy (Part VI Criminal Code)","[3750]","135","113","",,
+"2","Disorderly houses, gaming and betting","[3760]","136","113","",,
+"2","Offences against the person and reputation (Part VIII Criminal Code)","[3770]","137","113","",78,
+"2","Other offences against the person and reputation","[3772]","320","113","",,
+"2","Offences against rights of property (Part IX Criminal Code)","[3780]","138","113","",,
+"2","Fraudulent transactions relating to contracts and trade (Part X Criminal Code)","[3790]","139","113","",,
+"2","Wilful and forbidden acts in respect of certain property (Part XI Criminal Code)","[3810]","140","113","",135,
+"2","Wilful and forbidden acts in respect of certain material property","[3811]","321","113","",,
+"2","Offences relating to currency (Part XII Criminal Code)","[3820]","141","113","",,
+"2","Proceeds of crime (Part XII.2 Criminal Code)","[3825]","142","113","",,
+"2","Attempts, conspiracies, accessories (Part XIII Criminal Code)","[3830]","143","113","",,
+"2","Instruct offence for criminal organization","[3840]","144","113","",,
+"2","Commit offence for criminal organization","[3841]","145","113","",,
+"2","Participate in activities of criminal organization","[3842]","146","113","",,
+"2","Recruitment of members by a criminal organization","[3843]","255","113","",66,
+"2","All other Criminal Code (includes Part XII.1 Criminal Code)","[3890]","147","113","",,
+"2","Total Criminal Code traffic violations","[900]","148","2","",92,
+"2","Total impaired driving","[910]","149","148","",49;92;103;130,
+"2","Operation - low blood drug concentration","[9205]","270","149","",92,
+"2","Operation while impaired causing death (alcohol)","[9210]","150","149","",92,
+"2","Operation while impaired causing death (alcohol and drugs)","[9213]","271","149","",92,
+"2","Operation while impaired causing death (drugs)","[9215]","151","149","",92,
+"2","Operation while impaired causing death (unspecified)","[9217]","272","149","",92,
+"2","Operation while impaired causing bodily harm (alcohol)","[9220]","152","149","",92,
+"2","Operation while impaired causing bodily harm (alcohol and drugs)","[9223]","273","149","",92,
+"2","Operation while impaired causing bodily harm (drugs)","[9225]","153","149","",92,
+"2","Operation while impaired causing bodily harm (unspecified)","[9227]","274","149","",92,
+"2","Operation while impaired (alcohol)","[9230]","154","149","",51;92,
+"2","Operation while impaired (alcohol and drugs)","[9233]","275","149","",92,
+"2","Operation while impaired (drugs)","[9235]","155","149","",92,
+"2","Operation while impaired (unspecified)","[9237]","276","149","",92,
+"2","Impaired operation, failure to provide breath sample","[9240]","156","149","",92,
+"2","Failure to comply or refusal (drugs)","[9245]","157","149","",92,
+"2","Impaired operation, failure to provide blood sample","[9250]","158","149","",92,
+"2","Failure to provide blood sample (drugs)","[9255]","159","149","",92,
+"2","Failure or refusal to comply with demand (alcohol)","[9260]","277","149","",92,
+"2","Failure or refusal to comply with demand (alcohol and drugs)","[9263]","278","149","",92,
+"2","Failure or refusal to comply with demand (drugs)","[9265]","279","149","",92,
+"2","Failure or refusal to comply with demand (unspecified)","[9267]","280","149","",92,
+"2","Failure or refusal to comply with demand, accident resulting in bodily harm (alcohol)","[9270]","281","149","",92,
+"2","Failure or refusal to comply with demand, accident resulting in bodily harm (alcohol and drugs)","[9273]","282","149","",92,
+"2","Failure or refusal to comply with demand, accident resulting in bodily harm (drugs)","[9275]","283","149","",92,
+"2","Failure or refusal to comply with demand, accident resulting in bodily harm (unspecified)","[9277]","284","149","",92,
+"2","Failure or refusal to comply with demand, accident resulting in death (alcohol)","[9280]","285","149","",92,
+"2","Failure or refusal to comply with demand, accident resulting in death (alcohol and drugs)","[9283]","286","149","",92,
+"2","Failure or refusal to comply with demand, accident resulting in death (drugs)","[9285]","287","149","",92,
+"2","Failure or refusal to comply with demand, accident resulting in death (unspecified)","[9287]","288","149","",92,
+"2","Total other Criminal Code traffic violations","[920]","160","148","",92,
+"2","Dangerous operation, causing death","[9110]","161","160","",92,
+"2","Dangerous operation, causing bodily harm","[9120]","162","160","",92,
+"2","Dangerous operation of motor vehicle, vessel or aircraft","[9130]","163","160","",92,
+"2","Dangerous operation evading police, causing death","[9131]","164","160","",92,
+"2","Dangerous operation evading police, causing bodily harm","[9132]","165","160","",92,
+"2","Dangerous operation of motor vehicle evading police","[9133]","166","160","",92,
+"2","Total fail to stop or remain","[930]","167","160","",46;92,
+"2","Driving while prohibited","[9320]","168","160","",92,
+"2","Other Criminal Code traffic violations","[9330]","169","160","",92,
+"2","Causing death by criminal negligence while street racing","[9410]","170","160","",92,
+"2","Causing bodily harm by criminal negligence while street racing","[9420]","171","160","",92,
+"2","Dangerous operation causing death while street racing","[9430]","172","160","",92,
+"2","Dangerous operation causing bodily harm while street racing","[9440]","173","160","",92,
+"2","Dangerous operation of motor vehicle while street racing","[9450]","174","160","",92,
+"2","Total Federal Statute violations","[400]","175","1","",,
+"2","Total drug violations","[401]","231","175","",,
+"2","Possession, cannabis (pre-legalization)","[4140]","176","231","",91,
+"2","Possession, cocaine","[4120]","177","231","",115,
+"2","Total, possession, other Controlled Drugs and Substances Act drugs","[410]","178","231","",115,
+"2","Heroin, possession","[4110]","179","178","",115,
+"2","Other Controlled Drugs and Substances Act, possession","[4130]","180","178","",115,
+"2","Methamphetamines (crystal meth), possession","[4150]","181","178","",115,
+"2","Methylenedioxyamphetamine (ecstasy), possession","[4160]","182","178","",85;115,
+"2","Opioid (other than heroin), possession","[4170]","266","178","",86;115,
+"2","Total cannabis, trafficking, production or distribution (pre-legalization)","[420]","183","231","",80;85;91;139,
+"2","Cannabis, trafficking (pre-legalization)","[4240]","184","183","",80;85;91,
+"2","Cannabis, importation and exportation (pre-legalization)","[4340]","185","183","",80;85;91,
+"2","Cannabis, production (pre-legalization)","[4440]","186","183","",91,
+"2","Total cocaine, trafficking, production or distribution","[430]","187","231","",80,
+"2","Cocaine, trafficking","[4220]","188","187","",80,
+"2","Cocaine, importation and exportation","[4320]","189","187","",80;124,
+"2","Cocaine, production","[4420]","190","187","",,
+"2","Total other Controlled Drugs and Substances Act drugs, trafficking, production or distribution","[440]","191","231","",80,
+"2","Heroin, trafficking","[4210]","192","191","",,
+"2","Other Controlled Drugs and Substances Act, trafficking","[4230]","193","191","",80,
+"2","Methamphetamines (crystal meth), trafficking","[4250]","194","191","",80,
+"2","Methylenedioxyamphetamine (ecstasy), trafficking","[4260]","195","191","",,
+"2","Opioid (other than heroin), trafficking","[4270]","267","191","",86,
+"2","Heroin, importation and exportation","[4310]","196","191","",80;124,
+"2","Other Controlled Drugs and Substances Act, importation and exportation","[4330]","197","191","",80;124;148,
+"2","Methamphetamines (crystal meth), importation and exportation","[4350]","198","191","",80;124,
+"2","Methylenedioxyamphetamine (ecstasy), importation and exportation","[4360]","199","191","",80;124,
+"2","Opioid (other than heroin), importation and exportation","[4370]","268","191","",86;124,
+"2","Heroin, production","[4410]","200","191","",,
+"2","Other Controlled Drugs and Substances Act, production","[4430]","201","191","",,
+"2","Methamphetamines (crystal meth), production","[4450]","202","191","",,
+"2","Methylenedioxyamphetamine (ecstasy), production","[4460]","203","191","",,
+"2","Opioid (other than heroin), production","[4470]","269","191","",86,
+"2","Possession, sale, etc., for use in production of or trafficking in substance","[4590]","230","231","",44;85,
+"2","Total Cannabis Act","[450]","289","231","",91;139,
+"2","Total possession - Cannabis Act","[451]","290","289","",91;115,
+"2","Possession of illicit or over 30g dried cannabis (or equivalent) by adult","[4911]","291","290","",91;115,
+"2","Possession of over 5g dried cannabis (or equivalent) by youth","[4912]","292","290","",91;115,
+"2","Possession of budding or flowering plants, or more than four cannabis plants","[4913]","293","290","",91;115,
+"2","Possession of cannabis by organization","[4914]","294","290","",91;115,
+"2","Total distribution - Cannabis Act","[452]","295","289","",91,
+"2","Distribution to an organization, illicit or over 30g dried cannabis (or equivalent) by adult","[4921]","296","295","",91,
+"2","Distribution of cannabis to youth by adult","[4922]","297","295","",91,
+"2","Distribution to an organization or over 5g dried cannabis (or equivalent) by youth","[4923]","298","295","",91,
+"2","Distribution of budding or flowering plants, or more than four cannabis plants","[4924]","299","295","",91,
+"2","Distribution of cannabis by organization","[4925]","300","295","",91,
+"2","Possession of cannabis for purpose of distributing","[4926]","301","295","",91,
+"2","Total sale - Cannabis Act","[453]","302","289","",91,
+"2","Sale of cannabis to adult","[4931]","303","302","",91,
+"2","Sale of cannabis to youth","[4932]","304","302","",91,
+"2","Sale of cannabis to an organization","[4933]","305","302","",91,
+"2","Possession of cannabis for purpose of selling","[4934]","306","302","",91,
+"2","Total importation and exportation - Cannabis Act","[454]","307","289","",91;106;124,
+"2","Importation and exportation of cannabis","[4941]","308","307","",91;124;146;148,
+"2","Possession of cannabis for purpose of exportation","[4942]","309","307","",91,
+"2","Total production - Cannabis Act","[455]","310","289","",91,
+"2","Obtain, offer to obtain, alter or offer to alter cannabis","[4951]","311","310","",91,
+"2","Cultivate, propagate or harvest cannabis by adult","[4952]","312","310","",91,
+"2","Cultivate, propagate or harvest cannabis by youth or organization","[4953]","313","310","",91,
+"2","Possess, produce, sell, distribute or import anything for use in production or distribution of illicit cannabis","[4961]","314","289","",91,
+"2","Use of young person in the commission of a cannabis offence","[4971]","315","289","",91,
+"2","Other Cannabis Act","[4981]","316","289","",91,
+"2","Youth Criminal Justice Act","[6450]","204","175","",,
+"2","Total other Federal Statutes","[610]","205","175","",,
+"2","Bankruptcy Act","[6100]","206","205","",,
+"2","Income Tax Act","[6150]","207","205","",,
+"2","Canada Shipping Act","[6200]","208","205","",,
+"2","Canada Health Act","[6250]","209","205","",,
+"2","Customs Act","[6300]","210","205","",114,
+"2","Competition Act","[6350]","211","205","",,
+"2","Excise Act","[6400]","212","205","",,
+"2","Total Immigration and Refugee Protection Act","[620]","213","205","",46;144,
+"2","Firearms Act","[6550]","214","205","",,
+"2","National Defence Act","[6560]","215","205","",109,
+"2","Quarantine Act","[6600]","318","205","",104,
+"2","Other federal statutes","[6900]","216","205","",113;116;142,
+"3","Actual incidents","","1","","",,
+"3","Rate per 100,000 population","","2","","",102;132,
+"3","Percentage change in rate","","3","","",22,
+"3","Percentage contribution to the Crime Severity Index (CSI)","","17","","",121;122,
+"3","Unfounded incidents","","15","","",87,
+"3","Percent unfounded","","16","","",87,
+"3","Total cleared","","4","","",,
+"3","Cleared by charge","","5","4","",,
+"3","Cleared otherwise","","6","4","",,
+"3","Total, persons charged","","7","","",23,
+"3","Rate, total persons charged per 100,000 population aged 12 years and over","","8","","",31;102;132;137,
+"3","Total, adult charged","","9","","",,
+"3","Rate, adult charged per 100,000 population aged 18 years and over","","10","","",31;102;132;137,
+"3","Total, youth charged","","11","","",39;40,
+"3","Rate, youth charged per 100,000 population aged 12 to 17 years","","12","","",31;102;132;137;138,
+"3","Total, youth not charged","","13","","",39;40,
+"3","Rate, youth not charged per 100,000 population aged 12 to 17 years","","14","","",31;102;132;137;138,
+
+Symbol Legend
+Description,Symbol
+"not available for a specific reference period","..",
+"less than the limit of detection","<LOD",
+"value rounded to 0 (zero) where there is a meaningful distinction between true zero and the value that was rounded","0s",
+"data quality: excellent","A",
+"data quality: very good","B",
+"data quality: good","C",
+"data quality: acceptable","D",
+"use with caution","E",
+"too unreliable to be published","F",
+"not applicable","...",
+"preliminary","p",
+"revised","r",
+"suppressed to meet the confidentiality requirements of the Statistics Act","x",
+"terminated","t",
+
+"Survey Code","Survey Name"
+"3302","Uniform Crime Reporting Survey"
+
+"Subject Code","Subject Name"
+"35","Crime and justice"
+
+"Note ID",Note
+1,"Incident-based Uniform Crime Reporting Survey (UCR2) data are not available for all respondents. In order to report this level of detail for police services still reporting to the Aggregate Uniform Crime Reporting Survey (UCR) over this time, a process of imputation was applied to derive counts for violations that do not exist on their own in the aggregate survey. For approximately 80% of the aggregate offence codes, there is a 1:1 mapping with a new incident-based violation code. For violations where this was not the case, such as the aggregate other Criminal Code category, it was necessary to estimate (impute) this figure using the distribution of other Criminal Code offences from existing Incident-based UCR2 respondents."
+2,"During the production of each year's crime statistics, data from the previous year are revised to reflect any updates or changes that have been received from the police services. For more information on the concepts, methods and quality of the data contained in this table, please contact the Canadian Centre for Justice and Community Safety Statistics at statcan.ccjcss-ccsjsc.statcan@statcan.gc.ca."
+3,"The methodology for calculating census metropolitan area (CMA) populations was modified in 2003. Starting in 1996, the populations for CMAs have been adjusted to reflect the actual policing boundaries within the CMA and do not reflect the official Statistics Canada population for these CMAs. CMA data are included within province-level data."
+4,"Part of the 2007 increase in crime in St. John's, Newfoundland and Labrador and Saint John, New Brunswick can be attributed to changes in police reporting practices rather than actual increases in criminal activity."
+5,"The census metropolitan area (CMA) of Saguenay was formerly known as Chicoutimi-Jonquière."
+6,"The census metropolitan area (CMA) of Ottawa-Gatineau was formerly known as Ottawa-Hull."
+7,"During the revision of 2001 data for the province of Ontario, a discrepancy in methodology applied by the forces in the province using the Ontario Municipal and Provincial Police Automated Co-operative (OMPPAC) system was detected. These forces report approximately one-third of the total criminal incidents for the province and include the Ontario Provincial Police and about 60 small and mid-sized municipal forces. This discrepancy resulted in an over-count of less serious criminal incidents. During 2003 and 2004, the Canadian Centre for Justice Statistics (CCJS) consulted with affected police services and analyzed both historical Aggregate Uniform Crime Reporting Survey (UCR) data and more recent Incident-based Uniform Crime Reporting Survey (UCR2) microdata to determine the impact of this over-reporting. The effect at the Canada level was, on average, 1% per year from 1977 to 2000. This over-counting peaked in 1991, where it was estimated that the total crime rate for the country was over-estimated by approximately 1.8%. However, the overall historical trend changed very little. The impact in Ontario is more noticeable, but the overall trend is still very similar. On average, the effect was 2% to 3% per year, with the biggest change occurring in 1991, where the Ontario crime rate is 5% lower as a result of the adjustment. For further information, refer to the report:<a href="https://www.statcan.gc.ca/imdb-bmdi/document/3302_D13_T9_V1-eng.pdf" rel="external noopener noreferrer" target="_blank">Summary of Historical Adjustments to Crime Data for Ontario 1977-2000 (opens new window)</a>."
+8,"Abbotsford-Mission, British Columbia and Kingston, Ontario became new census metropolitan areas (CMAs) as of the 2001 Census. Moncton, New Brunswick, Peterborough, Ontario, Brantford, Ontario, Guelph, Ontario, Barrie, Ontario, and Kelowna, British Columbia became new CMAs as of the 2006 Census. Lethbridge, Alberta and Belleville, Ontario became new CMAs as of the 2016 Census. Fredericton, New Brunswick; Drummondville, Quebec; Red Deer, Alberta; Kamloops, British Columbia; Chilliwack, British Columbia and Nanaimo, British Columbia became new CMAs as of the 2021 Census."
+9,"Crime data from April to December 2004 for Winnipeg are estimates (except for homicide and motor vehicle theft) due to the implementation of a new records management system. Use with caution when comparing these data with prior years."
+10,"Approximately half of the vehicle thefts in Winnipeg in 2007 were attempts, higher than the national average of about 15%. Both the decrease in the number of completed vehicle thefts in Winnipeg, as well as the increase in attempted thefts, may be attributed to the new provincial requirement for specific high-risk vehicles to be equipped with immobilizers, rendering these vehicles much more difficult to steal."
+11,"Prior to 1999, a number of Royal Canadian Mounted Police (RCMP) detachments in Saskatchewan were double counting the number of actual offences of impaired driving. This over-counting was corrected in 1999, therefore, comparisons with previous years should be made with caution. It is recommended that the analysis of impaired driving be based on persons charged data rather than actual offences."
+12,"Data for 2001 include estimates for 3 months for the Vancouver police service and 2 months for the Port Moody police service, covering the phase-in period required for a new records management system. In addition, from September 2000 to September 2001, as a result of labour action, there were decreases in the number of crimes reported to the Vancouver police service for certain offences. As a result, the number of Criminal Code offences reported by Vancouver were affected during this period."
+13,"As a result of ongoing investigations in Port Coquitlam, British Columbia, there were 5 homicides reported in the Vancouver census metropolitan area (CMA) total for 2007, 5 reported in 2004, 7 reported in 2003 and 15 included in 2002 that occurred in previous years. Homicides are counted according to the year in which police file the report."
+14,"In 2004, Vancouver police service changed their scoring procedures for reporting impaired driving incidents to include all incidents of impaired driving, not just those resulting in a charge being laid, meaning that incidents cleared by other means, (for example, roadside suspension) are now included. This resulted in almost 1,900 additional incidents being reported in 2004 compared to 2003. Use with caution when comparing these data with prior years."
+15,"1998 data in this table for Northwest Territories also includes Nunavut. In 1999, Nunavut, which comprises the eastern part of the old Northwest Territories, officially became a Canadian territory. Starting in 1999, data are displayed separately for the Northwest Territories and Nunavut."
+16,"The violent crime category has been expanded under the Incident-based Uniform Crime Reporting Survey (UCR2) to include a number of offences not previously included in the violent crime category, including uttering threats, criminal harassment and forcible confinement. Therefore, total violent crime counts in this table will not match total violent crime counts from the Aggregate Uniform Crime Reporting Survey (UCR)."
+17,"Homicide data are extracted from the Homicide Survey database. For further information, refer to: <a href="https://www.statcan.gc.ca/imdb-bmdi/3315-eng.htm" rel="external noopener noreferrer" target="_blank"> Homicide Survey (opens new window)</a>."
+18,"Robbery counts have been revised for the years 1998 to 2007. This change has resulted in an increase of approximately 12% annually in the number of reported robbery incidents for this time period. Use caution when comparing these data with prior years."
+19,"Counterfeiting counts have been revised for the years 1998 to 2007. This change has resulted in a significant decrease in counterfeiting incidents over this time period. Use with caution when comparing these data with prior years."
+20,"There is a break in the time series in the offensive weapons category due to different offences being assigned to the weapons offence codes in 1999. Use with caution when comparing these data with prior years."
+21,"Any increase in disturbing the peace violations may be, in part, attributable to a national data quality initiative undertaken by the Royal Canadian Mounted Police (RCMP) to properly account for the types of offences that are aggregated under this offence."
+22,"This represents the year-over-year (current year over last year) percentage change in the rate of actual incidents."
+23,"Total persons charged is the total of adults charged and youth charged."
+24,"In general, the Uniform Crime Reporting Survey (UCR) counts any adult and youth charged for the year in which the charge was laid. The homicide totals, which come from The Homicide Survey, count any adult or youth charged with a homicide that occurred in the reference year, regardless of when the charge was laid."
+25,"Any reference to Police Officer has been changed to read Peace Officer, as per the Canadian Criminal Code. Peace officer refers to any person employed for the preservation and maintenance of the public peace or for the service or execution of civil process. Examples of a Peace Officer are a mayor, warden, police officer, or bailiff constable. Please see the Canadian Criminal Code for a complete list of designates."
+26,"Sexual violations against children is a new crime category with only partial data available prior to 2008. As a result, numbers and rates should not be directly compared to data from previous years."
+27,"In 2002, legislative changes were made to include the use of the Internet for the purpose of committing child pornography offences. As such, the percent change in this offence is calculated from 2003 to 2009."
+28,"Youth crime in British Columbia may be somewhat undercounted due to the Crown charge-approval system in place whereby, even for minor offences, there must be approval by the Crown before charges are laid after police have made an arrest. This approval is based on the substantial likelihood of conviction."
+30,"In January 2010, the Uniform Crime Reporting Survey (UCR) was modified to create new violation codes for identity fraud and identity theft. Prior to 2010, those offences would have been coded as fraud."
+31,"Populations at the census metropolitan areas (CMA) level by age and sex are not available prior to 2004, and as a result, rates for adults and youth are not available for these years."
+32,"The 2009 Sherbrooke clearance rate is exceptionally high because of dedicated efforts throughout the year to update the database before a major conversion in informatics."
+33,"In 2009, slight changes were made to the respondent-to-CMA mapping for this census metropolitan area (CMA) which have resulted in minor revisions to previously published data."
+34,"Historically police services have reported kidnapping and forcible confinement under a single combined violation code. In 2008 the Incident-based Uniform Crime Reporting Survey (UCR2) introduced separate codes for these violations which police services utilize as their Records Management Systems are updated to allow them. As a result, comparison with previous years should be done with caution."
+35,"In 2009, legislation was introduced to create the offences of assault with a weapon or causing bodily harm to a peace officer (level 2) and aggravated assault to a peace officer (level 3). The introduction of these new codes into the UCR Survey created a system anomaly which resulted in some non-peace officer assaults being coded as peace officer assaults in 2010. Comparisons to 2010 should be made with caution."
+36,"For the period from 1998 to 2007 Incident-based Uniform Crime Reporting Survey (UCR2) data on criminal harassment are not available for all respondents. In order to report this violation for police services still reporting to the aggregate Uniform Crime Reporting Survey (UCR) over this time, a process of imputation was applied to derive counts using the distribution of 'other' Criminal Code offences from existing Incident-based Uniform Crime Reporting Survey (UCR2) respondents."
+37,"Data for Sherbrooke were not available in 2010, and therefore have been copied over from 2009 at the request of the police service."
+38,"Clearance data for Montreal were not available in 2010, and therefore have been estimated based on clearance information from previous years."
+39,"Data on youth charged and youth not charged may include a small number of people under the age of 12."
+40,"Data for youth charged and youth not charged for impaired driving are not available prior to 2007. As a result, comparisons of Total all violations and Total Criminal Code violations (including traffic) over time should be made with caution."
+42,"In April 2011, legislation came into effect making it an offence to traffic in property obtained by crime, including possession with intent to traffic property obtained by crime. In addition to creating new Uniform Crime Reporting Survey (UCR) violation codes to capture these offences, the existing UCR violation code pertaining to possession of stolen property was modified. The UCR now separates possession of stolen property into possession of stolen property under $5,000 and possession of stolen property over $5,000 in order to be more in line with the Criminal Code of Canada. As a result of this change, a number of incidents of possession of stolen property under $5,000 are now being reported as secondary offences when they occur in conjunction with more serious offences, leading to a decrease in the number of possession of stolen property incidents reported in 2011."
+43,"In April 2011, legislation came into effect making it an offence to traffic in property obtained by crime, including possession with intent to traffic property obtained by crime. The Uniform Crime Reporting Survey (UCR) introduced two new violations codes to collect this information. They are Trafficking in Stolen Goods over $5,000 (incl. possession with intent to traffic) and Trafficking in Stolen Goods under $5,000 (incl. possession with intent to traffic)."
+44,"In 2011, the Controlled Drugs and Substances Act was amended to make it illegal for anyone to possess, produce, sell or import anything knowing it will be used to produce or traffic in crystal meth or ecstasy. The Uniform Crime Reporting Survey (UCR) introduced a new violation code to collect this information."
+45,"In 2011, the Criminal Code was amended to make it illegal for anyone to alter, destroy or remove a Vehicle Identification Number (VIN). The Uniform Crime Reporting Survey (UCR) introduced a new violation code to collect this information."
+46,"Detailed information of this category is available upon request."
+47,"With the release of 2012 data, revised population estimates at the respondent level were applied back to and including 2004. This resulted in boundary changes for the census metropolitan areas (CMA) of Saint John for 2005 to 2011 and for Winnipeg for 2011. Crime data for these years for these respondents have therefore been revised."
+48,"In August 2012, legislation came into effect making it an offence to make sexually explicit material available to a child for the purpose of facilitating sexual offences against children/youth. The Uniform Crime Reporting Survey (UCR) introduced a new violation code to collect this information."
+49,"In 2011, the introduction of the Immediate Roadside Prohibition (IRP) in British Columbia provided an alternative method for officers to proceed with penalties for impaired drivers and may account for the trends reported for 2011 and 2012."
+50,"In 2012, it was discovered that the Montreal Police Service had been incorrectly applying the agreed upon definition for reporting child pornography incidents to the Uniform Crime Reporting Survey (UCR). As such, the number of violations has been revised for the years 2008 to 2011."
+51,"In 2012, Charlottetown altered the classification of calls from the public regarding impaired driving which accounts for the decrease at the municipal and provincial levels that year."
+52,"Ottawa numbers also include child pornography incidents reported by the National Child Exploitation Crime Centre of the Royal Canadian Mounted Police (RCMP) which is located in the City of Ottawa. The Centre responds to internet-facilitated sexual abuse cases nationally. Therefore, while the incidents are detected by the RCMP Centre located in Ottawa and appear in Ottawa's crime statistics, the incidents themselves or the offenders are not limited to the city of Ottawa."
+53,"As a result of terrorist scares arising during the student demonstrations in the Spring of 2012 in Quebec, the Directeur des poursuites criminelles et pénales du Québec authorized police to make arrests under terrorism laws, particularly for "hoax terrorism". Therefore, the increase in terrorism-related incidents is mostly attributable to events related to the student demonstrations."
+54,"Police reported statistics may be affected by differences in the way police services deal with minor offences. In some instances, police or municipalities might chose to deal with some minor offences using municipal by-laws or provincial provisions rather than Criminal Code provisions. Counts are based on the most serious violation in the incident."
+55,"With the release of 2013 data, revised population estimates at the respondent level were applied back to and including 2011. This resulted in boundary changes for the census metropolitan area (CMA) of Saguenay. Crime data for these years for this respondent have therefore been revised."
+56,"In 2013, it was discovered that an error in Quebec's provincial reporting system had incorrectly resulted in a number of thefts being coded as identity thefts in Montreal. As such, the number of incidents of identity theft has been revised for the years 2010 to 2012."
+57,"Due to the complexity of these incidents, the data likely reflect the number of active or closed investigations for the year rather than the total number of incidents reported to police."
+58,"Part way through 2013, the Royal Canadian Mounted Police revised policing boundaries for rural detachments in New Brunswick. This resulted in a change in the census metropolitan area (CMA) boundaries that are determined for the purpose of reporting crime statistics. As such, 2013 data for the New Brunswick CMAs of Saint John and Moncton are not comparable to previous or future years. Further, data from 2014 onward are not comparable to years prior to 2014."
+59,"Between April 1 and September 30 2014, the British Columbia Integrated Child Exploitation Unit (BC ICE) undertook a proactive project to record Internet Protocol (IP) addresses in possession of, and possibly sharing child pornography. This resulted in an increase in reported child pornography violations that year and all incidents detected by the BC ICE unit were recorded in the records management system used by Surrey Police Service. Therefore, while the incidents were reported through Surrey and appear in crime statistics for Surrey (and the Vancouver census metropolitan area [CMA] as Surrey is within this CMA's boundaries), neither the incidents themselves nor the offenders are limited to Surrey."
+60,"Previous to 2014, Greater Sudbury (35290) would record only those incidents where a search warrant was obtained and a charge related to child pornography was laid. As of 2014, reporting practices have changed to include all information of IP addresses with links to child pornography for information gathering and intelligence purposes. Therefore, comparisons with previous years should be made with caution."
+61,"The increase in failure to stop or remain in 2014 for Gatineau Police Service (24216) can be attributed to a change in charging practices within the police service. Rather than using provincial statutes, they are now charging these incidents based on Criminal Code provisions. Therefore, comparisons with previous years should not be made."
+62,"The decrease in other violations causing death between 2013 and 2014 can be partly attributable to fewer incidents of criminal negligence, which were specific to the Lac-Mégantic rail disaster in 2013."
+63,"In 2014, legislation was introduced to create the offence of Mischief to war memorials (Bill C-217). The offence of mischief in relation to cultural property was also introduced as a result of this legislation. Police services are able to utilise these codes as their Records Management Systems are updated to allow them. As a result, these data may be under-counted and should therefore be interpreted with caution."
+64,"Bill C-36 came into effect in December 2014. The new legislation targets "the exploitation that is inherent in prostitution and the risks of violence posed to those who engage in it" (Criminal Code Chapter 25, preamble). New violations classified as ”Offences in Relation to Sexual Services” under "violations against the person" include: the purchasing of sexual services or communicating for that purpose, receiving a material benefit deriving from the purchase of sexual services, procuring of persons for the purpose of prostitution, and advertising sexual services offered for sale. In addition, a number of other offences related to prostitution continue to be considered non-violent offences and are classified under "Other Criminal Code offences". These include communicating to provide sexual services for consideration, and; offences related to impeding traffic to buy or sell sexual services. At the same time, the survey was amended to classify the violations codes of Parent or guardian procuring sexual activity, and Householder permitting prohibited sexual activity under "violations against the person". The following violations officially expired on December 05, 2014: bawdy house, living off the avails of prostitution of a person under 18, procuring, obtains/communicates with a person under 18 for purpose of sex, and other prostitution. Police services are able to utilize these codes as their Records Management Systems are updated to allow it. As a result, these data should be interpreted with caution."
+65,"In April of 2013, the Government of Canada introduced a new bill entitled "An Act to amend the Criminal Code, the Canada Evidence Act and the Security of Information Act" (Bill S-7). As a result of this new legislation, the following Uniform Crime Reporting Survey (UCR) violation codes were introduced: leave Canada to participate in activity of a terrorist group, leave Canada to facilitate terrorist activity, leave Canada to commit an offence for a terrorist group, leave Canada to commit an offence that is a terrorist activity, harbour/conceal known terrorist where terrorist activity had max = life, harbour/conceal known terrorist where terrorist activity had max not = life, harbour/conceal person likely to carry out terrorist activity. Police services are able to utilise these codes as their Records Management Systems are updated to allow them. As a result, these data may be under-counted and should therefore be interpreted with caution."
+66,"On June 19, 2014, the Canadian Government granted royal assent to Bill C-394 "An Act to amend the Criminal Code and the National Defence Act (criminal organization recruitment)". The Come into Force date for this Act was June 19, 2014. As a result, the following violation was introduced: recruitment of members by a criminal organization. Police services are able to utilise this code as their Records Management Systems are updated to allow it. As a result, these data should be interpreted with caution."
+67,"Ontario numbers also include child pornography incidents reported by the Canadian Police Centre for Missing and Exploited Children of the RCMP which is located in the City of Ottawa. The Centre responds to Internet-facilitated sexual abuse cases nationally. Therefore, while the incidents are detected by the RCMP Centre located in Ontario, the incidents themselves or the offenders are not limited to the province of Ontario."
+68,"Prior to 2013, all incidents of child pornography recorded by the Royal Canadian Mounted Police Service's Canadian Police Centre for Missing and Exploited Children (CPCMEC), located in Ottawa, were reported under the Ottawa Police Service. In 2014, Statistics Canada began reporting CPCMEC data separately and revised data for 2013 to account for this change. As a result of revisions to the 2013 data, some incidents identified by the CPCMEC and referred to the Ottawa Police Service for investigation may have been transferred to the CPCMEC. As such, the revised number of incidents for Ottawa Police Service for 2013 may be underrepresented and should not be compared to other years."
+69,"Historically, police services reported all child pornography offences under a single combined violation code, of which the majority of the offences were possessing child pornography. In early 2016, the Uniform Crime Reporting Survey (UCR) was modified to allow police to report making and distributing child pornography from other child pornography offences (i.e., possession and accessing child pornography). Since police services are able to utilize these codes as their Records Management Systems are updated to allow them, a few were reported in 2015. As a result, these data should therefore be interpreted with caution."
+70,"Coming into effect on July 17th, 2015, Bill C-26 increased the maximum penalties for certain sexual offences against children, including failure to comply with orders and probation conditions relating to sexual offences against children. In the Uniform Crime Reporting Survey (UCR), the most serious violation is partially determined by the maximum penalty. As such, changes in maximum penalty may affect the most serious violation in an incident reported by police. Police services are able to utilize these amendments as their Records Management Systems are updated to allow them."
+71,"On April 10, 2015, Bill C-10 Tackling Contraband Tobacco Act came into effect. As a result, this law created the Criminal Code offence of trafficking in contraband tobacco which is counted under the violation "Offences against the administration of law and justice". Prior to April 2015, the offence was counted under "Excise Act". As such, comparisons of these two violations to previous years should be made with caution."
+72,"Effective December 2014, Bill C-36 amended the definition of the term "common bawdy house" in the Criminal Code to remove reference to prostitution. As a result of this amendment, the Uniform Crime Reporting Survey (UCR) violation of "Bawdy house" was terminated, and the new violation of "Common bawdy house" was introduced. Police services are able to utilise this amendment as their Records Management Systems are updated to allow it. As a result, these data should be interpreted with caution."
+73,"Includes Criminal Code violations that specifically concern offences involving child and youth victims. These include sexual interference, invitation to sexual touching, sexual exploitation, making sexually explicit material available to children for the purpose of facilitating sexual offences against children/youth, luring a child via a computer, parent or guardian procuring sexual activity, householder permitting prohibited sexual activity, agreement or arrangement and bestiality in presence of, or incites, a child. Incidents of child pornography are not included in the category of sexual violations against children. Excludes incidents of sexual assault levels 1, 2 and 3 against children and youth which are counted within those three violation categories. Other sexual offences not involving assault or sexual violations against children are included with "other violent offences"."
+74,"Due to the length of time for investigations to confirm whether or not the incident is founded, annual counts of terrorism offences are subject to revisions downwards when revised data are released one year after the initial release. Therefore, changes between the current year of data and the previous year should be interpreted with caution."
+75,"On March 9, 2015, Bill C-13 Protecting Canadians from Online Crime Act came into effect. As a result, the law created a new criminal offence of non-consensual distribution of intimate images. It also clarified that Criminal Code offences of harassing / indecent communications can be committed by any means of telecommunication. Police services are able to utilize these amendments as their Records Management Systems are updated to allow them."
+76,"The increase in incidents of child pornography between 2014 and 2015 can be in part attributed to a proactive project initiated by the British Columbia Integrated Child Exploitation Unit which recorded Internet Protocol (IP) addresses that were in possession of, and possibly sharing child pornography. As the initiative focused on Victoria in 2015, notable increases in these offences were reported by this jurisdiction."
+78,"On June 17, 2016, Bill C-14 "An Act to amend the Criminal Code to make related amendments to other Acts (medical assistance in dying)" came in effect. As a result, the law created new offences around for failing to comply with the safeguards which must be respected before medical assistance in dying may be provided to a person, for forging or destroying documents related to medical assistance in dying, for failing to provide the required information for the purpose of permitting the monitoring of medical assistance in dying and for contravening the regulations made by the Minister of Health respecting that information. Three new UCR2 violation codes were introduced in response to these amendments to the Criminal Code. Police services are able to utilize the survey revision as their Records Management Systems are updated to allow them."
+79,"The increase in incidents of child pornography between 2015 and 2016 in Vancouver can be in part attributed to a proactive project initiated by the British Columbia Integrated Child Exploitation Unit which recorded Internet Protocol (IP) addresses that were in possession of, and possibly sharing child pornography. As the initiative focused on Vancouver in 2016, notable increases in these offences were reported by this jurisdiction. As a result, comparison with previous years should be done with caution."
+80,"In 2016, the Royal Canadian Mounted Police (RCMP) detachment in Montréal underwent an exercise in making corrective measures to address under-counting of incidents importation/exportation and trafficking of drug offences. In response, Statistics Canada applied estimates to the 2015 revised data. As a result, numbers and rates from 2015 onwards should not be compared to data prior to 2015."
+83,"Historically, police services reported bestiality offences under a single violation code. In June 2015, the Uniform Crime Reporting Survey (UCR) was modified to allow police to report in Bestiality in Presence of, or Incites, a Child (1381) separately from Bestiality – Commits, Compels Another Person (1380). Since police services are able to utilize these codes as their Records Management Systems are updated to allow them, 2015 data should be interpreted with caution."
+84,"Historically, police services reported Agreement or Arrangement - Sexual Offences Against Child (1371) under the same violation code as Luring a Child via a Computer (1370). In June 2015, the Uniform Crime Reporting Survey (UCR) was modified to allow police to report these violations separately. Since police services are able to utilize these codes as their Records Management Systems are updated to allow them, 2015 data should be interpreted with caution."
+85,"On May 18, 2017, Bill C-37 "An Act to amend the Controlled Drugs and Substances Act and to make related amendments to other Acts" came into effect. As a result, the offence of possessing, producing, selling or importing anything knowing it will be used to produce or traffic in crystal meth or ecstasy was expanded to include all substances listed in Schedule I, II , III, IV or V of the Controlled Drugs and Substances Act."
+86,"On November 22, 2017, new opioid (other than heroin) violation codes (4170, 4270, 4370, 4470) were added to the Uniform Crime reporting Survey. The addition of these codes is in response to the need expressed by police services to capture the prevalence of opioids using violation codes specific to this type of drug. Previously, offences related to the possession, trafficking, importation and exportation and production of opioids (other than heroin) were included under ‘other controlled drugs and substances’ (4130, 4230, 4330, 4430). Since police services are able to utilize these codes as their Records Management Systems are updated to allow them, 2017 data should be interpreted with caution."
+87,"Data for unfounded incidents are available for 2017 and subsequent years in order to resume collection that had been halted in 2006 due to inconsistent reporting. To improve comparability, the definition of founded and unfounded criminal incidents was revised in 2017 and any prescribed changes relating to the classification of incidents will be phased in over time starting with the reporting of 2019 data. As such, it is understood that inconsistencies in reporting may still exist in 2017 and 2018. Data may therefore be incomparable across police services."
+88,"On December 12, 2017, Bill C-305 “An Act to ament the Criminal Code (mischief)” came into effect. This enactment amended the offence of mischief to property primarily used for worship to include mischief in relation to property that is used by an identifiable group (2176) for educational purposes, administrative, social, cultural or sports activities or events or as residence for seniors."
+89,"In 2018, Saint John Municipal Police Service identified a data processing issue that affected certain violations including: sexual assault (1310, 1320, 1330), assault with a weapon or causing bodily harm (1420), failure to appear (3510), failure to comply with order (3410) and breach of probation (3520). As such, estimations were applied for 2016 and 2017. Data should therefore be used with caution."
+90,"Data for unfounded incidents of terrorism are not available for 2017 due to data quality concerns."
+91,"On October 17, 2018, Bill C-45 “An Act respecting cannabis and to amend the Controlled Drugs and Substances Act, the Criminal Code and other Acts” came into effect. As a result, all prior pre-legalization cannabis-related legislation under the Controlled Drugs and Substances Act (CDSA) has been expired and replaced with 22 new violation codes under the Cannabis Act."
+92,"On June 21, 2018, Part 1 of Bill C-46 “An Act to amend the Criminal Code (relating to conveyances) and to make consequential amendments to other Acts” came into effect. Part 2 of this legislation came into effect on December 18, 2018. As a result of this legislation, the Uniform Crime Reporting (UCR) Survey created 19 new violation codes and expired 15 existing traffic-specific violation codes."
+93,"In 2018, Winnipeg Police Service began counting violations involving methamphetamines (e.g., crystal meth) under the specific Uniform Crime Reporting (UCR) methamphetamine violations. Prior to this, violations involving methamphetamines were counted under the category of “other Controlled Drugs and Substances Act (CDSA)”; consequently, Winnipeg Police Service has provided an estimate of the actual number of incidents for methamphetamine violations and other CDSA violations in 2017. Data should therefore be used with caution."
+94,"In 2018, the Royal Canadian Mounted Police (RCMP) reporting practices for drug seizures reported by Canadian Border Services Agency (CBSA) to the RCMP in Niagara were amended to better align with the Uniform Crime Reporting (UCR) survey in an effort to report consistent and accurate data. Due to this amendment in reporting practices, the RCMP detachment provided an estimate of the actual number of incidents for violations in 2017. Data should therefore be used with caution."
+95,"In 2018, the Royal Canadian Mounted Police (RCMP) in Montréal amended their practices for reporting incidents of importation/exportation of drug offences to better align with the Uniform Crime Reporting (UCR) survey in an effort to report consistent and accurate data. This has contributed to increases in these offences. However, if it is assumed that there were no changes in these counts reported by the Montréal RCMP from 2017 to 2018, there would still be a national increase in importation/exportation offences in 2018."
+96,"In 2019, the Uniform Crime Reporting Survey (UCR) added a new violation code (1300) to collect information on “sexual offences which occurred prior to January 4, 1983”. While most violations are not typically reported years after their occurrence, it is not uncommon for sexual violations to be reported by a victim long after the incident took place due to a variety of reasons. On January 4, 1983, Canadian legislation surrounding sexual offences changed considerably. In order to reflect these changes, the UCR added the new violation code to help record these historical offences separately from those reported under an existing violation code that does not reflect the state of Canadian legislation at the time of the offence. Data for 2018 was updated to include this new violation code."
+97,"In January 2018, the Uniform Crime Reporting Survey (UCR) definitions of “founded” and “unfounded” criminal incidents were updated to reflect a more victim-centred approach for recording crimes that consider the complexities of certain offences such as sexual assault, family violence and intimate partner violence. Under the new reporting standards, specific offences may be more likely reported by police as founded rather than unfounded (or unsubstantiated), which would exclude them from police-reported crime rates and crime severity indices. Data for 2019 represent the first complete year of UCR data collected under the new reporting standards.  As a result, for selected violations and police services, the actual proportion of incidents in 2019 that were classified as “not cleared” has increased. Use caution when comparing these data with prior years."
+98,"In 2019, the high proportion of importation or exportation offences reported under the Cannabis Act in Montréal was due in part to cannabis seizures conducted by the Canada Border Services Agency in Montréal that were thought to be related to the possible misunderstanding by the public about the legality under the new legislation of purchasing cannabis from outside of Canada and having it delivered into the country."
+99,"Part of the overall increase in police-reported crime in British Columbia and some of its census metropolitan areas in 2019 may be attributed to the implementation of new reporting standards for classifying incidents. More specifically, in January 2018, the Uniform Crime Reporting Survey (UCR) definitions of “founded” and “unfounded” criminal incidents were updated to reflect a more victim-centred approach for recording crimes. While the effective date for the change was January 2018 and many police services adopted the new standards that year, some police services, including all of the RCMP detachments across Canada and the municipal police services in British Columbia, transitioned to the new standards on January 1, 2019. Additionally, police services in British Columbia undertook a uniform training strategy to further standardize reporting throughout the province. The new reporting standards were expected to result in an increase in crime rates over time."
+100,"In Kelowna in 2019, a national RCMP Sexual Assault Review Team undertook a review of current and historical sexual assault cases in the RCMP detachment in Kelowna to ensure appropriate use of the reporting standards for classifying incidents as founded or unfounded. As a result, Kelowna’s 2018 statistics for sexual assault have been revised from the original counts released in July 2019. As well, the file review and adoption of the new incident clearance codes have likely contributed to a notably higher number of sexual assault incidents when compared to previous years."
+101,"A high crime rate or Crime Severity Index (CSI) may indicate that a municipality is a geographical area that provides commercial business, human or public services, or entertainment for many people who reside outside, as well as inside, the municipality. As a result, these municipalities may have large part-time or temporary populations which are excluded from both their population bases and their crime rate and CSI calculations."
+102,"Population figures reflect only the permanent or resident population of a jurisdiction. Where a jurisdiction serves as the centre for commercial businesses, human or public services, or entertainment, it may have substantial “part-time” populations, e.g., tourists, cabin owners, commuters, students, and seasonal staff. These temporary populations, whose permanent residence is within another jurisdiction, are excluded from a jurisdiction’s population figures. This may be a factor to consider when examining the crime rate and Crime Severity Index for some municipalities."
+103,"In 2018, Bill C-46 amended the Criminal Code and other Acts and introduced new legislation for impaired driving violations. At this time, the Uniform Crime Reporting (UCR) Survey was adjusted to add or expire some violation codes and ensure the previous UCR impaired driving codes align with the new legislation. These UCR changes may result in different reporting practices among the police services across Canada for impaired driving violations reported to the survey."
+104,"With the Government of Canada's March 2020 announcement of restrictions on persons arriving in or departing from Canada, pursuant to its powers under the Quarantine Act, the Uniform Crime Reporting (UCR) Survey was adjusted to add a specific Quarantine Act violation code (6600). As police services adopt this new code and adjust to the new reporting requirements, there may be data revisions made to correct any misreporting of these incidents."
+105,"In 2020, the Vancouver CMA in British Columbia accounted for 56% of all importation or exportation offences reported under the Cannabis Act (4,194 of the 7,552 offences reported nationally). The high proportion of offences was due in part to seizure cases, conducted by the Canada Border Services Agency and the Canada Post Mail Centre in the Vancouver CMA, being forwarded for processing and investigation to the Royal Canadian Mounted Police (RCMP). As a result of this exchange, the year in which occurrences were reported by the RCMP may not always correspond to the year in which they occurred."
+106,"In 2020, the Montréal CMA in Quebec accounted for the majority of the national decrease in importation or exportation offences reported under the Cannabis Act, decreasing 72% (4,180 fewer incidents) from 2019 to 2020. The large decrease in offences year-over-year was due in part to fewer postal seizures and seizures conducted by the Canada Border Services Agency in Montréal since the beginning of the COVID-19 pandemic."
+107,"Under the authority of the Canadian Forces Provost Marshal (CFPM), the Canadian Forces Military Police Group (CF MP Gp) provides professional policing, security, and detention services to the Canadian Armed Forces (CAF) and the Department of National Defence (DND) globally, across the full spectrum of military operations. Uniform Crime Reporting (UCR) Survey data for the CF MP Gp represent only crimes committed in Canada, on or in relation to DND property or assets, investigated by the military police. Within Canada, in many instances, the military police share concurrent jurisdiction with civilian police. In the enforcement of Canadian military and criminal laws, military police are peace officers and lawfully exercise jurisdiction over members of the CAF and over persons on defence establishments including civilians."
+108,"Under the authority of the Canadian Forces Provost Marshal (CFPM), the Canadian Forces Military Police Group (CF MP Gp) is now reporting incidents to the Uniform Crime Reporting (UCR) Survey. They have provided incidents going back to January 2020. Data from the Office of the CFPM are aggregated at the national level to account for small counts and to protect confidentiality. Therefore, provincial and territorial totals will not equal Canada-level totals. Currently, the Canadian Centre for Justice and Community Safety Statistics (CCJCSS) is developing the methodology for determining the population counts for the Canadian Armed Forces (CAF). Therefore Crime Severity Index data and rates are not available."
+109,"Under the authority of the Canadian Forces Provost Marshal (CFPM), the Canadian Forces Military Police Group (CF MP Gp) is now reporting incidents to the Uniform Crime Reporting (UCR) Survey. They have provided incidents going back to January 2020. Therefore, comparisons with data previous to 2020 should be made with caution."
+110,"It is important to note that while official police-reported data on crime from the Uniform Crime Reporting (UCR) Survey use Statistics Canada's standard Census Metropolitan Area (CMA) names, the boundaries for the policing-based CMAs do not always fully align with the standard CMA geographic units used for disseminating information about the Census of Population."
+111,"Trafficking in persons incidents reported to the Uniform Crime Reporting (UCR) Survey may be undercounted due to differences in police reporting practices for this violation."
+112,"The marked increases observed in 2021 and 2022 for shoplifting under $5,000 violations for Halifax Metropolitan Area is due in part to a change in classification for some incidents involving retail theft. These incidents were previously reported as theft $5,000 or under (2140). Starting in mid-2021 they began reporting these as shoplifting under $5,000 (2143)."
+113,"The marked increase observed in the 2022 counts for "Other Federal Statutes" violations is in part due to an increase in incidents against Government Property Traffic Act regulations for the Canadian Forces Military Police Service Group (CF MP Gp)."
+114,"The marked increase observed in the 2022 counts for "Customs Act" violations may be due to an increase in criminal incidents at the Roxham Road unofficial border crossing point from New York State to Quebec. In 2023, "Customs Act" incidents decreased primarily as a result of the closure of this unofficial border crossing on March 25, 2023. As well, a portion of the decrease can be attributed to a data entry practice which resulted in the underreporting of incidents."
+115,"The marked declines observed in drug possession incidents may be due to changes in police charging practices in response to: 1) the August 2020 guidelines issued by the Public Prosecution Service of Canada’s (PPSC) directing prosecutors to avoid prosecutions for simple possession offences under the Controlled Drugs and Substances Act (CDSA), and 2) the introduction of Health Canada's exemption from the CDSA for the province of British Columbia for the personal possession of small amounts of certain illegal drugs, that came into effect on January 31, 2023."
+116,"The 2022 and 2021 'Other Federal Statutes' incidents reported to the Uniform Crime Reporting Survey by the Canadian Pacific Railway Police may be an undercount due to inaccurate survey coding guidelines. As a result, these data should be interpreted with caution."
+117,"As of 2022, new violation codes were added to the Uniform Crime Reporting (UCR) Survey. The "Total other violent violations" category  now includes the following new violations: 1633 'Causing or Providing Conversion Therapy', 1634 'Material Benefit from Conversion Therapy', 1635 'Intimidation of a person to impede them from obtaining health services', 1636 'Intimidation of a health professional to impede their duties', 1637 'Intimidation of a person assisting  in the performance of the health services to impede in those functions', 1638 'Obstruction or interference with access to health services', 1639 'Failure to Provide Necessaries', 1640 'Impeding Attempt to Save Life' and 1641 'Trafficking in Human Organs', which are not presented in detail for confidentiality reasons."
+118,"As of 2022, new violation codes related to animal cruelty were added to the Uniform Crime Reporting (UCR) Survey. The category "Total violations related to Animal Cruelty" was created and includes the following UCR violations: 3812 ‘Injuring or endangering Animals’, 3813 ‘Killing or injuring Law Enforcement or Military Animals’, 3814 ‘Causing unnecessary suffering to Animals’, 3815 ‘Causing damage or injury due to a failure to exercise reasonable care - animals or birds’, and 3816 ‘Arena for animal fighting’ which are not presented in detail for confidentiality reasons."
+119,"The "Total other violations" category includes the following UCR violations: 3570 'Promoting or Advertising Conversion Therapy', 3700 'Unauthorized Recording of a Movie/Purpose of Sale, Rental, Commercial Distribution', and 3771 'Failure to comply with the regulations/obligations for medical assistance in dying', which are not presented in detail for confidentiality reasons."
+121,"The percentage contribution to the Crime Severity Index (CSI) statistic indicates the relative impact of a given violation (or group of violations) on the CSI for a given geography and year. Changes in the percentage contribution of a violation over time may be the result of variations (up or down) to that violation or for other violations."
+122,"The Crime Severity Index (CSI) measures changes in the level of severity of crime in Canada from year to year. In the index, all crimes are assigned a weight based on their seriousness. The level of seriousness is based on actual sentences handed down by the courts in all provinces and territories. More serious crimes are assigned higher weights, less serious offences lower weights. As a result, more serious offences have a greater impact on changes in the index. The PRCSI is standardized to 100 in base year 2006. CSI weights are updated using data from the Integrated Criminal Courts Survey (ICCS) every 5 years. 2022 marks the third update to the CSI weights since 1998. 2021 revised and 2022 CSI data are presented here using the updated weights and may have a marginal impact on the CSI data itself. For further information, refer to data table 35100026."
+124,"Change in the rate of offences related to importation or exportation of Cannabis or other illicit drugs or controlled substances may be due in part to operational conditions and reporting of seizure cases, conducted by the Canada Border Services Agency and the Canada Post Mail Centre. These cases are forwarded for processing and investigation, and as a result of this exchange, the year in which occurrences were reported by police may not always correspond to the year in which they occurred. Therefore, year-over-year changes in these offences should be considered with caution."
+125,"Data are based on police-reported incidents that are recorded in police services’ records management systems. Public safety initiatives, increased public awareness, and changes in policies and technologies available to social media companies have contributed to increases in reports of child pornography incidents to police. As public awareness continues to increase, police services are recording increases in recent and historical incidents which may also impact annual reporting of these criminal violations. Additionally, the Royal Canadian Mounted Police National Child Exploitation Crime Centre (NCECC) serves as the primary point of contact in Canada for investigations related to sexual exploitation of children on the Internet. The NCECC and specialized provincial Internet child exploitation policing units also work in partnership with local police services and jurisdictions. Within this partnership, cases may be forwarded to local police services for processing and investigation. As a result of this exchange, there may be delays in reporting current or historical incidents of child pornography. This means that the year in which incidents are reported may not correspond to the year in which they occurred. Due to the complexity of child pornography investigations, the majority of which involve a cybercrime component, the data likely reflect the number of active or closed investigations for the year rather than the total number of incidents reported to police."
+126,"The marked increase observed in 2022 for shoplifting may in part be due to advances in technology, including increased reporting online."
+127,"The increase observed in 2023 for making or distributing child pornography (3456) violations in British Columbia is due to an increase in the number of cases coming to the attention of local RCMP detachments in British Columbia through a partnership with the British Columbia Integrated Child Exploitation Unit (BC ICE Unit). This is a specialized unit, whose mandate is specific to Internet Child Exploitation Investigations. The increased use of the Internet and advancements in technology, for example, improvements made to algorithms used to automatically scan social media platforms for Child Sexual Abuse Material (CSAM), have improved the capacity for detecting and reporting these incidents."
+128,"The 2023 child pornography incidents for Surrey, British Columbia (59704) could be higher than what they should be because counts include a number of incidents that are known to have been reported in the province of British Columbia but may or may not have occurred in Surrey. This is because the exact location of some incidents is unknown and they have therefore been attributed to Surrey; the location of the British Columbia Integrated Child Exploitation Unit (BC ICE)."
+130,"In December 2020, the Government of Alberta implemented Bill 21, the Provincial Administrative Penalties Act, changing the way police can respond to impaired drivers with the introduction of Immediate Roadside Sanctions (IRS). Due to reporting system limitations, Calgary Police Service is not able to report their IRS incidents to the Uniform Crime Reporting (UCR) Survey. As a result, impaired driving data are under-counted and should be interpreted with caution."
+131,"The increase observed in 2023 for making or distributing child pornography (3456) violations in Edmonton is due to an increase in the number of cases - current and historical – forwarded to Edmonton Police Service (EPS) by ALERT's (Alberta Law Enforcement Response Teams) ICE (Internet Child Exploitation) teams whose mandate is specific to Internet Child Exploitation investigations for all of northern Alberta."
+132,"Police service Census Metropolitan Area (CMA) and respondent populations are created using the July 1 Census subdivision (CSD) population estimates prepared by the Centre for Demography at Statistics Canada. Variations might exist between the CSD estimates for Alberta used for the period from 2016 to 2020 and those produced by the Alberta Office of Statistics and Information."
+133,"The increase observed for possession of or accessing child pornography (3455) violations in Halifax Metropolitan Area, Nova Scotia is in part due to an increase in the number of cases forwarded to Halifax Regional Police by Nova Scotia's Royal Canadian Mounted Police (RCMP) Internet Child Exploitation (ICE) unit whose mandate is specific to Internet Child Exploitation investigations for all of Nova Scotia."
+134,"Some of the counts for Saint John Police Force (SJPF) are unverified, which may result in an underestimate of some types of violations. Data should be interpreted with caution."
+135,"Due to an increased need for data related to animal cruelty, the Canadian Centre for Justice and Community Safety Statistics (CCJCSS) has broken out Uniform Crime Reporting (UCR) violation code 3810 (Wilful/Forbidden acts in respect of property) in order to include more detailed violations. As a result in 2022, violation code 3810 ‘Wilful and Forbidden Acts in Respect of Certain Property (Part XI CC)’ has been expired and the following six violations have been added to the survey: 3811 ‘Other Interference with Property’, 3812 ‘Injuring or endangering Animals’, 3813 ‘Killing or injuring Law Enforcement or Military Animals’, 3814 ‘Causing unnecessary suffering to Animals’, 3815 ‘Causing damage or injury due to a failure to exercise reasonable care - animals or birds’, and 3816 ‘Arena for animal fighting’."
+136,"The census metropolitan area (CMA) of Belleville-Quinte West was formerly known as Belleville."
+137,"As of 2016, rates are suppressed when populations are less than 1,000. Use data prior to this year with caution."
+138,"Youth population data are not available prior to 2004, therefore the rates shown are incorrect and should not be used."
+139,"As a result of the coming into force of the Cannabis Act on October 17, 2018, all prior cannabis-related legislation under the Controlled Drugs and Substances Act (CDSA) has been replaced with the Cannabis Act. Since this time, a select few historical incidents were reported under prior CDSA cannabis legislation as police services continue to implement the new Cannabis Act offence categories in their Records Management Systems. As well, statistics reflect incidents that are reported or charged in a given year and this can include incidents that occurred prior to the year in question (i.e., pre-legalization) but were reported or charged in the given year. Therefore, the sum of all Cannabis Act offences may not equal total cannabis offences in all years."
+140,"In June 2024, Bill C-69, “An Act to implement certain provisions of the budget tabled in Parliament on April 16, 2024” amended the Criminal Code to include several new offences related to motor vehicle theft. At this time, the Uniform Crime Reporting (UCR) Survey was adjusted to add four new violation codes including: '1435 -Motor vehicle theft when violence used, threatened or attempted', '2136 - Motor vehicle theft for criminal organization', ' 2137 - Possession or distribution of device linked to motor vehicle theft, and '3826 - Laundering proceeds of crime for criminal organization'. It is important to note that the new violation '1435 - Motor vehicle theft when violence used, threatened or attempted' is not included in the rollup 0220 "Total Motor Vehicle theft" given that it is a violent violation."
+141,"Data for 2024 from Kingston Police may be undercounted due to a cyber-attack that was experienced in November and December 2024."
+142,"The increase in '6900 Other Federal Statutes' counts in Saskatchewan in 2023 and 2024 is due to the renewed enforcement and prosecution of Indian Act band by-laws. In 2016, Federal Prosecutions ceased prosecuting Indian Act by-law offences, requiring communities to appoint their own prosecutors. Until then, the RCMP in Saskatchewan stopped enforcing these by-laws. As of October 2023, enforcement resumed through a partnership between the Saskatchewan RCMP (F Division), the Federation of Sovereign Indigenous Nations (FSIN), and the provincial government. This reinstatement focuses on section 85.1 of the Indian Act, which allows band councils to prohibit alcohol-related activities in dry communities."
+143,"Crime data from September to December 2024 for Brantford are estimates (except for homicides) due to delays in recording and validating incidents in their records management system. Use with caution when comparing these data with prior years."
+144,"The increases observed in 2023 and 2024 for 'Total Immigration and Refugee Protection Act' violations is largely due to changes made by Canada and the United States (US) to the Safe Third Country Agreement (STCA), that took effect on March 25, 2023. The STCA prohibits individuals seeking asylum at the border from claiming refugee status in Canada if they have traveled through the US and it was expanded to apply along the entire land border, including internal waterways. The changes led to the closure of the Roxham Road illegal border crossing and increased patrols at the border, increasing the number of arrests of persons (smugglers) facilitating the passage of individuals entering Canada illegally."
+145,"For the Montreal Police Service, the number of fraud offences (2160) and identity fraud (2166) is undercounted for the year 2024 due to a data transmission issue. It is anticipated that the corrections will be applied to the revised data for 2024 during the scheduled release in 2026."
+146,"Reporting seized drugs at a ferry port in Victoria, BC, that hosts travel between the USA and Canada, is new in 2024. The counts observed in the ‘Importation and exportation of cannabis’ (4941) for Victoria Police Department (59025) beginning in 2024 are largely due to the Royal Canadian Mounted Police’s (RCMP) Federal Policing No Case Seizure team (NCS) generating files for drugs seized by the Canadian Border Services Agency (CBSA) at border locations. Due to RCMP/CBSA policies and a Memorandum of Understanding between the two Departments, CBSA will hold the drugs seized for 90 days prior to the RCMP NCS Team picking up the drugs for reporting and disposal. Due to the holding period, resources, and pick-up schedule, the year in which incidents were reported by police may not always correspond to the year in which the offence occurred. Therefore, year-over-year changes in these offences and comparison will be impacted."
+147,"The increases observed in 2024 for ‘luring a child via a computer’ violations (1370) in British Columbia are due to an increase in the number of cases coming to the attention of local RCMP detachments in British Columbia through a partnership with the British Columbia Integrated Child Exploitation Unit (BC ICE Unit) and the National Child Exploitation Crime Centre (NCECC). BC ICE is a specialized unit, whose mandate is to investigate and provide investigational support, subject matter expertise and education related to online child sexual exploitation offences within the province of BC."
+148,"The increase in counts observed for both ‘Importation and exportation of cannabis’ (4941) and ‘Other Controlled Drugs and Substances Act - importation and exportation’ (4330) violations in 2024 for the Richmond, British Columbia, Royal Canadian Mounted Police, municipal detachment (59711) are due to the Royal Canadian Mounted Police’s (RCMP) Federal Policing No Case Seizure team (NCS) generating files for drugs seized by the Canadian Border Services Agency (CBSA) at border locations, including Vancouver International Airport. Previously, these seizures were managed by Federal Policing Vancouver International Airport Unit. However, resources were not readily available to process the seizures and in early 2024, the NCS team took over management of the seizures, reporting and disposal for a significant backlog of drugs. Due to RCMP/CBSA policies and a Memorandum of Understanding between the two Departments, CBSA will hold the drugs seized for 90 days prior to the RCMP NCS Team picking up the drugs for reporting and disposal. Due to the holding period, resources, and pick-up schedule, the year in which incidents were reported by police may not always correspond to the year in which the offence occurred. Therefore, year-over-year changes in these offences and comparison will be impacted."
+
+"Correction ID","Correction Date","Correction Note"
+"1174","2019-08-01","<p>On August 1, 2019, the data for 2018 for “Total impaired driving” have been corrected.<br></p>",
+

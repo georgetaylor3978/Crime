@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canadian Crime Statistics Dashboard</title>
+    <meta name="description" content="Interactive dashboard for Canadian crime statistics from 1998 to 2024 — explore violations, trends, and breakdowns by type.">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@3.0.1/dist/chartjs-plugin-annotation.min.js"></script>
+</head>
+<body>
+    <div id="loader" class="loading"><span class="loading-text">Loading Crime Data...</span></div>
+
+    <header>
+        <div class="title-container">
+            <h1>Canadian Crime Statistics</h1>
+            <p>Police-Reported Incidents &bull; 1998–2024 &bull; Statistics Canada (Table 35-10-0177-01)</p>
+        </div>
+        <div class="header-meta" id="headerMeta"></div>
+    </header>
+
+    <main>
+        <!-- KPI Cards -->
+        <div class="kpi-grid" id="kpiGrid"></div>
+
+        <!-- Controls -->
+        <div class="controls-panel">
+            <div class="control-group">
+                <label>Crime Category Group</label>
+                <select id="groupFilter">
+                    <option value="ALL">All Categories (Combined)</option>
+                    <option value="VIOLENT">Violent Crimes</option>
+                    <option value="PROPERTY">Property Crimes</option>
+                    <option value="DRUG">Drug Violations</option>
+                    <option value="TRAFFIC">Traffic Violations</option>
+                    <option value="OTHER_CC">Other Criminal Code</option>
+                    <option value="FEDERAL">Federal Statutes</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label>Sub-Category <span class="tag">Level 2</span></label>
+                <select id="subcatFilter">
+                    <option value="ALL">All Sub-Categories</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label>Specific Violation <span class="tag">Level 3</span></label>
+                <select id="violationFilter">
+                    <option value="ALL">All in Sub-Category</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label>Year Breakdown</label>
+                <select id="yearFilter"></select>
+            </div>
+            <div class="control-group">
+                <label>Trend Metric</label>
+                <select id="metricFilter">
+                    <option value="amount">Actual Incidents</option>
+                    <option value="growth">YoY % Change</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label>Top N Crimes</label>
+                <select id="topNFilter">
+                    <option value="10">Top 10</option>
+                    <option value="15">Top 15</option>
+                    <option value="20">Top 20</option>
+                    <option value="999">All</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Drill-Down Breadcrumb -->
+        <div id="breadcrumb" class="breadcrumb hidden">
+            <span id="breadcrumbText"></span>
+            <button id="breadcrumbBack" onclick="resetDrillDown()">&#8592; Back to Overview</button>
+        </div>
+
+        <!-- Charts Grid -->
+        <div class="chart-grid">
+            <!-- Trend Chart -->
+            <div class="card card-wide">
+                <div class="card-header">
+                    <div>
+                        <h2 id="trendTitle">Canadian Crimes by Type</h2>
+                        <p class="card-subtitle">Incidents per Year</p>
+                    </div>
+                    <div class="trend-chart-controls">
+                    <button id="combineToggle" class="toggle-btn" onclick="toggleCombine()" title="Switch between individual lines and stacked area">
+                        <span class="toggle-icon">⬡</span> Combine
+                    </button>
+                    <div class="chart-badges" id="trendBadges"></div>
+                </div>
+                </div>
+                <div class="chart-container tall">
+                    <canvas id="lineChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Top Crimes Bar -->
+            <div class="card">
+                <div class="card-header">
+                    <div>
+                        <h2>Violations: <span id="barYear"></span></h2>
+                        <p class="card-subtitle" id="barSubtitle">Ranked by Incident Count</p>
+                    </div>
+                </div>
+                <div class="chart-container tall">
+                    <canvas id="barChart"></canvas>
+                </div>
+            </div>
+
+            <!-- YoY Change Chart -->
+            <div class="card">
+                <div class="card-header">
+                    <div>
+                        <h2>Year-over-Year Change</h2>
+                        <p class="card-subtitle" id="yoySubtitle">% Change from Prior Year</p>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="yoyChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Composition Doughnut -->
+            <div class="card">
+                <div class="card-header">
+                    <div>
+                        <h2>Crime Composition</h2>
+                        <p class="card-subtitle" id="donutSubtitle">Share by Category Group</p>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="donutChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Data Table -->
+        <div class="table-section">
+            <div class="table-header">
+                <h2>Detailed Data</h2>
+                <div class="table-controls">
+                    <input type="search" id="tableSearch" placeholder="Search violations..." />
+                    <select id="tableSortField">
+                        <option value="year">Sort by Year</option>
+                        <option value="value">Sort by Incidents</option>
+                        <option value="category">Sort by Violation</option>
+                    </select>
+                    <select id="tableSortDir">
+                        <option value="desc">Descending</option>
+                        <option value="asc">Ascending</option>
+                    </select>
+                </div>
+            </div>
+            <div class="table-container">
+                <table id="dataTable">
+                    <thead>
+                        <tr>
+                            <th>Year</th>
+                            <th>Category Group</th>
+                            <th>Violation</th>
+                            <th>Actual Incidents</th>
+                            <th>YoY Change</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <div class="table-footer" id="tableFooter"></div>
+        </div>
+    </main>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
